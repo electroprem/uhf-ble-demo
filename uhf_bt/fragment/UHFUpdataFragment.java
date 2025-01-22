@@ -189,13 +189,13 @@ public class UHFUpdataFragment extends Fragment implements View.OnClickListener 
             // mypDialog.setMessage("init...");
             String msg = "";
             if(rbUHFFirmware.isChecked()) {
-                msg = "准备升级射频模块...";
+                msg = "Prepare to upgrade RF module...";
             } else if(rbMainboard.isChecked()) {
-                msg = "准备升级主板固件...";
+                msg = "Prepare to upgrade motherboard firmware...";
             } else if(rbBLE.isChecked()) {
-                msg = "准备升级蓝牙固件...";
+                msg = "Prepare to upgrade Bluetooth firmware...";
             }else if(rb_ex10.isChecked()) {
-                msg = "准备升级Ex10固件...";
+                msg = "Prepare to upgrade Ex10 firmwares...";
             }
             progressDialog = new ProgressDialog(mContext);
             progressDialog.setMessage(msg);
